@@ -45,6 +45,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc-lg{
 	padding:100px 50px;
 }
+.bloc-md{
+	padding:50px;
+}
 .bloc-sm{
 	padding:20px 50px;
 }
@@ -77,6 +80,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 	-moz-background-size: auto!important;
 	-o-background-size: auto!important;
 	background-size: auto!important;
+}
+.bg-center{
+	-webkit-background-size: auto;
 }
 .bg-repeat{
 	background:repeat;
@@ -183,6 +189,16 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-left:inherit;
 	padding-right:inherit;
 }
+/* = Sticky Nav
+-------------------------------------------------------------- */
+
+.sticky-nav.sticky{
+	position:fixed;
+	top:0;
+	z-index:1000;
+	box-shadow:0 1px 2px rgba(0,0,0,.3);
+	 transition: all .2s ease-out;
+}
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	color: rgb(64, 64, 64);
 }
@@ -205,6 +221,10 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin-top:10px;
 	margin-bottom:20px;
 }
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -222,6 +242,10 @@ button{
 .btn-rd{
 	border-radius: 40px;
 }
+.btn-xl{
+	padding: 16px 40px;
+	font-size: 28px;
+}
 .a-block{
 	width:100%;
 	text-align:left;
@@ -232,8 +256,34 @@ button{
 }
 .btn .caret{
 	margin:0 0 0 5px}
+/* = Icons
+-------------------------------------------------------------- */
+.icon-md{
+	font-size:30px!important;
+}
+.icon-round{
+	margin:0 auto;
+	border:2px solid transparent;
+	border-radius: 50%;
+	padding: 32px 30px 26px 30px;
+	min-width:80px;
+}
+.icon-round.icon-md,.icon-square.icon-md,.icon-rounded.icon-md{
+	min-width: 92px;
+}
+.icon-round.icon-lg,.icon-square.icon-lg,.icon-rounded.icon-lg{
+	min-width: 122px;
+}
+.icon-round.icon-xl,.icon-square.icon-xl,.icon-rounded.icon-xl{
+	min-width: 162px;
+}
 
 
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+.lg-shadow{
+	text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
 
 
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
@@ -301,7 +351,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:100%;
 }
 .p-style{
-	width:96.75%;
+	width:100%;
 }
 .p-bloc-7-style{
 	font-size:16px;
@@ -312,6 +362,24 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .p-2-style{
 	width:78.42%;
 }
+.h1-style{
+	font-size:100px;
+}
+.h3-style{
+	font-family:Alef;
+}
+.img-style{
+	border-radius:40px 40px 40px 40px;
+}
+.h2-style{
+	font-size:30px;
+}
+.h4-style{
+	font-size:18px;
+}
+.h5-style{
+	font-size:15px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -320,6 +388,24 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bgc-royal-purple{
 	background-color:#835BB9;
+}
+.bgc-black{
+	background-color:rgba(0,0,0,0.4);
+}
+.bgc-black-2{
+	background-color:#000000;
+}
+.bgc-white{
+	background-color:rgba(255,255,255,0.7);
+}
+
+/* Text colour styles */
+
+.tc-white{
+	color:#FFFFFF!important;
+}
+.tc-white-2{
+	color:#FFFFFF!important;
 }
 
 /* Button colour styles */
@@ -330,6 +416,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .btn-black:hover{
 	background:#000000!important;
+	color:#FFFFFF!important;
+}
+.btn-french-lilac{
+	background:#83618F;
+	color:#FFFFFF!important;
+}
+.btn-french-lilac:hover{
+	background:#694e72!important;
 	color:#FFFFFF!important;
 }
 
@@ -347,6 +441,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .ltc-white-2:hover{
 	color:#cccccc!important;
 }
+.ltc-black{
+	color:#000000!important;
+}
+.ltc-black:hover{
+	color:#000000!important;
+}
 
 /* Bloc image backgrounds */
 
@@ -355,6 +455,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-Cloud-Blog{
 	background-image:url("img/Cloud-Blog.jpg");
+}
+.bg-field{
+	background-image:url("img/field.jpg");
 }
 
 
@@ -420,3 +523,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	   height: 320px;
     }
 }
+@media (max-width: 575px){
+	.footer-link{
+		text-align:center;
+	}
+	
+}
+
